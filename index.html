@@ -9,64 +9,76 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Inconsolata|Indie+Flower|Poiret+One|Quicksand">
   <title>Kitter Page 1</title>
 </head>
-<body>
-  <body style="background-color: #95989E;">
-    <div class="toptext">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Kitter</a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-            </ul>
-          </li>
-        </ul>
-        <form class="navbar-form navbar-left">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home | </a></li>
-          <li><a href="#">Settings | </a></li>
-          <li><a href="#">Log Out |</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
-</nav>
-
-<div id="topborder"><br>
-  <h1 id="headline">Welcome, Nova!</h1><br>
-</div>
-<div class="containerprofile">
-  <div id="img" class="inline-block">
-    <img src="https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg" style="width:160px" display="inline-block"></img>
-  </div>
-  <div id="text" class="inline-block">
-    <p id="welcome"> Welcome, Nova! Today's date is :          _ </p> <br>
-    <p id="notifications"> You have 2 new messages and 3 new followers </p><br>
-    <button type="button" link="file:///Users/Sirius/six/2issue1project/index.html" id="postbutton" class="btn btn-primary btn-lg">P  o  s  t</button>
-  </div>
-</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-11">
-          </div>
+<body style="background-color: #95989E;">
+  <div class="toptext">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Kitter</a>
         </div>
-      <div id="showme"></div><br></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home | </a></li>
+            <li><a href="#">Settings | </a></li>
+            <li><a href="#">Log Out |</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="home-screen">
+      <br>
+      <h1 id="headline">Welcome, Nova!</h1>
+      <br>
+      <div class="container-profile">
+        <div id="img" class="inline-block">
+          <img src="https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg" style="width:160px" display="inline-block">
+        </div>
+        <div id="text" class="inline-block">
+          <p id="welcome"> Welcome, Nova! Today's date is :          _ </p>
+          <br>
+          <p id="notifications"> You have 2 new messages and 3 new followers </p>
+          <br>
+          <button type="button" link="file:///Users/Sirius/six/2issue1project/index.html" id="post-button" class="btn btn-primary btn-lg">P  o  s  t</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-11">
+            </div>
+          </div>
+          <div id="showme"></div><br></div>
+        </div>
+      </div>
     </div>
+    <div id="new-post" class="hide">
+      <h1 id="headline-post">SAY SOMETHING....</h1>
+      <br>
+      <!-- in-line user photo and text submit-->
+      <div class="container">
+        <div class="img">
+          <img src="https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg" style="width:160px">
+        </div>
+        <div class="text"><textarea class="form-control" id="comment" rows="3" placeholder="meow?">meow? </textarea>
+          <br>
+          <button type="button"> POST </button> </div>
+        </div>
+      </div>
     <script src="default.js"></script>
   </body>
   </html>

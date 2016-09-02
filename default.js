@@ -29,3 +29,11 @@ showme.innerHTML = theTweets;
   //alert('click this!')
   // to do: make this button actually do something
 //}
+
+  var postButton = document.getElementById('post-button');
+postButton.addEventListener('click', function(event){
+  var homeScreen = document.getElementById('home-screen')
+  homeScreen.classList.add('hide')
+  var newPost = document.getElementById('new-post')
+  newPost.classList.remove('hide')
+})
