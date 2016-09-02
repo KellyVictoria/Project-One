@@ -1,0 +1,91 @@
+.toptext {
+  font-family: 'Indie Flower', cursive;
+}
+
+#topborder {
+  padding-left: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+.containerprofile {
+  margin: 45px;
+  padding: 62px;
+  max-width: 90%;
+  background-color: #CCCDD0;
+  text-align: left;
+  border-radius: 40px;
+  box-shadow: -19px 15px 75px #32353E;
+}
+
+.img-thumbnail {
+  max-width: 176px;
+  max-height: 260px;
+  margin-left: 2px;
+  position: relative;
+}
+
+#openerlines {
+  line-height: 6em;
+}
+
+#welcome {
+  display: inline-block;
+  color: black;
+  line-height: 2em;
+  padding-left: 19px;
+  background-color: white;
+  border: #32353E solid 2px;
+  width: 85%;
+}
+
+#notifications {
+  word-break: break-all;
+  color: black;
+  line-height: 2em;
+  background-color: white;
+  border: #32353E solid 2px;
+}
+
+#postbutton {
+  background-color: white;
+  color: black;
+}
+.container {
+  margin: 35px;
+  border: 7px solid black;
+  padding: 12px;
+  border-radius: 28px;
+  max-width: 70%;
+  background-color: #CCCDD0;
+  text-align: left;
+  box-shadow: -19px 15px 75px #32353E;
+}
+.blah {
+  background-color: lightgrey;
+  margin: 10px;
+  width: 97%;
+  font-size: 19px;
+  border: 14px lightgrey solid;
+  border-radius: 17px;
+  box-shadow: -10px 10px 90px #32353E;
+}
+
+.content {
+  text-indent: 10px;
+  font-size: 27px;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: 'Poiret One', cursive;
+  src: url("https://fonts.googleapis.com/css?family=Poiret+One");
+}
+
+@font-face {
+  font-family: 'Amatic SC', sans-serif;
+  src: url('AmaticSC.webfont.woff2');
+  font-weight: 300;
+}
