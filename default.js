@@ -9,11 +9,11 @@ var tweets = [
   {'name': 'Fluffy', 'content': 'mewww meww mew'},
   {'name': 'Sniffles','content': '#blessed'},
   {'name': 'Keepo','content': 'meowmewmewoewmow'},
-  {'name': 'Keepo', 'content': 'mew'},
+  {'name': 'Keepo', 'content': 'mew'}
 ]
 
 var postButton = document.getElementById('post-button');
-postButton.addEventListener('click', function(event){
+postButton.addEventListener('click', function(){
   var homeScreen = document.getElementById('home-screen')
   homeScreen.classList.add('hide')
   var newPost = document.getElementById('new-post')
@@ -21,7 +21,7 @@ postButton.addEventListener('click', function(event){
 })
 
 var submitPost = document.getElementById('submit-post');
-submitPost.addEventListener('click', function(theEvent){
+submitPost.addEventListener('click', function(){
   var commentBox = document.getElementById('comment');
   var commentText = commentBox.value;
   var newTweet = {'content':commentText, name:'Nova'};
