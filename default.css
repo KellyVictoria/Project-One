@@ -1,10 +1,9 @@
 .toptext {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Poiret One', cursive;
 }
-
 #topborder {
   padding-left: 20px;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Poiret One', cursive;
 }
 .containerprofile {
   margin: 45px;
@@ -34,24 +33,31 @@
   padding-left: 19px;
   background-color: white;
   border: #32353E solid 2px;
-  width: 85%;
+  width: 95%;
+}
+
+.container {
+  background-color: #CCCDD0;
 }
 
 #notifications {
-  word-break: break-all;
   color: black;
   line-height: 2em;
   background-color: white;
   border: #32353E solid 2px;
+  width: 400px;
+  padding-left: 19px;
 }
 
-#postbutton {
+#post-button {
   background-color: white;
   color: black;
+  border: black 1px solid;
 }
-.container {
+
+.post-tweet {
   margin: 35px;
-  border: 7px solid black;
+  border: #32353E solid 2px;
   padding: 12px;
   border-radius: 28px;
   max-width: 70%;
@@ -59,15 +65,22 @@
   text-align: left;
   box-shadow: -19px 15px 75px #32353E;
 }
-.blah {
+
+#tweets {
   background-color: lightgrey;
   margin: 10px;
   width: 97%;
   font-size: 19px;
   border: 14px lightgrey solid;
-  border-radius: 17px;
+  border-radius: 10px;
   box-shadow: -10px 10px 90px #32353E;
 }
+
+p{
+  background-color: lightgrey;
+  margin: 10px;
+}
+
 
 .content {
   text-indent: 10px;
@@ -77,6 +90,11 @@
 .inline-block {
   display: inline-block;
   vertical-align: top;
+}
+
+#headline-post{
+  padding-left: 20px;
+  font-family: 'Poiret One', cursive;
 }
 
 @font-face {
