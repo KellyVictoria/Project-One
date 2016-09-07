@@ -66,15 +66,21 @@
   box-shadow: -19px 15px 75px #32353E;
 }
 
-#tweets {
-  background-color: lightgrey;
+#showme {
   margin: 10px;
   width: 97%;
   font-size: 19px;
   border: 14px lightgrey solid;
   border-radius: 10px;
   box-shadow: -10px 10px 90px #32353E;
+  display: block;
 }
+
+.user{
+  color: purple;
+  text-indent: 11px;
+}
+
 
 p{
   background-color: lightgrey;
