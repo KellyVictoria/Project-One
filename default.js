@@ -34,19 +34,26 @@ submitPost.addEventListener('click', function(){
   newPost.classList.add('hide')
 })
 
-function showTweets(tweets){
+function showTweets(tweets) {
   var mainView = document.getElementById('main-view');
-  mainView.innerHTML="";
-  for( var i=0; i<tweets.length; i++) {
+  mainView.innerHTML = '';
+  for (var i = 0; i < tweets.length; i++) {
     var tweet = tweets[i];
-    var tweetText = document.createElement('p');
-    var linebreak = document.createElement('br');
-
-    mainView.classList.add('user');
-    tweetText.textContent="@" + tweet.name + " : " + tweet.content;
-    mainView.appendChild(tweetText);
-    mainView.appendChild(linebreak);
+    var element = tweetElement(tweet);
+    mainView.appendChild(element);
   }
+}
+
+function getUserTweets(username, tweets) {
+  var userTweets = [];
+  for (var i = 0; i < tweets.length; i++) {
+    var tweet = tweets[i];
+    if (username === tweet.name) {
+      userTweets.push(tweet);
+    }
+  }
+
+  return userTweets;
 }
 
 function tweetElement(tweet) {
@@ -63,13 +70,20 @@ function tweetElement(tweet) {
   var userParagraph = document.createElement('p');
   userParagraph.classList.add('tweet-username');
   userParagraph.textContent = '@' + tweet.name;
+  userParagraph.setAttribute('data-username', tweet.name)
   var tweetContent = document.createElement('p');
   tweetContent.classList.add('tweet-text');
   tweetContent.textContent = tweet.content;
   element.appendChild(userParagraph);
   element.appendChild(tweetContent);
 
+  userParagraph.addEventListener('click', function (event){
+    var username = event.target.getAttribute('data-username');
+    var tweetsForUser = getUserTweets(username, tweets)
+    showTweets(tweetsForUser);
+  })
+
   return element;
 }
 
-showTweets(tweets)
+showTweets(tweets);

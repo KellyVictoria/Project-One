@@ -81,6 +81,11 @@
   text-indent: 11px;
 }
 
+.tweet-username {
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 p{
   background-color: lightgrey;
