@@ -12,13 +12,11 @@ var tweets = [
   {'name': 'Luna', 'content': 'mew'}
 ]
 
-var postButton = document.getElementById('post-button');
-postButton.addEventListener('click', function(){
-  var homeScreen = document.getElementById('home-screen')
-  homeScreen.classList.add('hide')
-  var newPost = document.getElementById('new-post')
-  newPost.classList.remove('hide')
-})
+var profile = {
+  name: 'Nova',
+  image: 'https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg'
+}
+
 
 var submitPost = document.getElementById('submit-post');
 submitPost.addEventListener('click', function(){
@@ -86,4 +84,56 @@ function tweetElement(tweet) {
   return element;
 }
 
+showProfile(profile);
 showTweets(tweets);
+
+
+function profileElement(profile) {
+  // <div>
+  //   <h1 id="headline">Welcome, Nova!</h1>
+  //   <img class="profile-image" src="https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg">
+  //   <div class="profile">
+  //     <p id="notifications"> You have 2 new messages and 3 new followers </p>
+  //     <button type="button" id="post-button" class="btn btn-primary btn-lg">P  o  s  t</button>
+  //   </div>
+  // </div>
+  var element = document.createElement('div');
+  var headline = document.createElement('h1');
+  headline.setAttribute('id', 'headline');
+  headline.textContent = 'Welcome, ' + profile.name + '!';
+  var profileImage = document.createElement('img');
+  profileImage.classList.add('profile-image');
+  profileImage.setAttribute('src', profile.image);
+  var profileDetails = document.createElement('div');
+  profileDetails.classList.add('profile');
+  var notificationText = document.createElement('p');
+  notificationText.setAttribute('id', 'notifications');
+  notificationText.textContent = 'You have 3 new messages and 4 new followers';
+  var postButton = document.createElement('button');
+  postButton.setAttribute('id', 'post-button');
+  postButton.classList.add('btn', 'btn-primary', 'btn-lg');
+  postButton.setAttribute('type', 'button');
+  postButton.textContent = ' P O S T ';
+  element.appendChild(headline);
+  element.appendChild(profileImage);
+  element.appendChild(profileDetails);
+  profileDetails.appendChild(notificationText);
+  profileDetails.appendChild(postButton);
+  postButton.addEventListener('click', function(){
+    var homeScreen = document.getElementById('home-screen')
+    homeScreen.classList.add('hide')
+    var newPost = document.getElementById('new-post')
+    newPost.classList.remove('hide')
+  })
+
+
+  return element;
+}
+
+
+function showProfile(profile) {
+  var element = profileElement(profile);
+  var containerProfile = document.getElementById('container-profile');
+  containerProfile.innerHTML = '';
+  containerProfile.appendChild(element);
+}
