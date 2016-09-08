@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Inconsolata|Indie+Flower|Poiret+One|Quicksand">
   <title>Kitter Page 1</title>
@@ -41,7 +40,7 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="home-screen">
+    <div id="home-screen" class="active">
       <br>
       <h1 id="headline">Welcome, Nova!</h1>
       <br>
@@ -61,10 +60,14 @@
             <div class="col-md-11">
             </div>
           </div>
-          <div id="showme"> </div><br></div>
+          <div id="main-view"> </div>
+          <div id="user">
+          </div><br></div>
         </div>
       </div>
     </div>
+
+    <!-- POST NEW TWEET - ISSUE 2 -->
     <div id="new-post" class="hide">
       <h1 id="headline-post">SAY SOMETHING....</h1>
       <br>
@@ -78,34 +81,29 @@
           <button type="button" id="submit-post"> POST </button> </div>
         </div>
       </div>
- <!-- issue 3 (hidden but unhidden when username or photo is clicked) -->
- <!-- container for user profile -->
-     <!--Photo, bio info, name, buttons to follow and message-->
-     <div id="top-block" class="three">
-       <div id="user-info" class="">
-         <h1 id="username"> Hello, Luna! </h1>
-         <div id="user-img" class="inline-block">
-           <img src="http://tinyurl.com/hbm6m3q" style="width:160px" display="inline-block">
-         </div> <!--end user img-->
-           <div id="text" class="inline-block">
-             <p id="user-bio"> Breed: Siamese <br> Location: Mew York </p><br> <text id="bio">Freelance lizard assassin,
-               trained in the art of knocking everything off the table</text>
-               <div id="user-buttons" class="three">
-                   <button data-id="follow-user"> Follow/Unfollow </button>
-                   <button data-id="message-user"> Message </button>
-               </div> <!-- end buttons -->
-           </div> <!--end text-->
-       </div> <!--end user info-->
-     </div> <!--end top block-->
+      <!-- issue 3 (hidden but shown when username or photo is clicked) -->
+      <!-- container for user profile -->
+      <!--Photo, bio info, name, buttons to follow and message-->
+      <div id="top-block" class="three">
+        <div id="user-info" class="">
+          <h1 id="username"> Hello, Luna! </h1>
+          <div id="user-img" class="inline-block">
+            <img src="http://tinyurl.com/hbm6m3q" style="width:160px" display="inline-block">
+          </div> <!--end user img-->
+          <div id="bio-text" class="inline-block">
+            <p id="user-bio"> Breed: Siamese <br> Location: Mew York </p><br> <text id="bio">Freelance lizard assassin,
+              trained in the art of knocking everything off the table</text>
+              <div id="user-buttons" class="three">
+                <button data-id="follow-user"> Follow/Unfollow </button>
+                <button data-id="message-user"> Message </button>
+              </div> <!-- end buttons -->
+            </div> <!--end text-->
+          </div> <!--end user info-->
+        </div> <!--end top block-->
 
-     <!-- user's tweets -->
+        <!-- user's tweets -->
 
-
-
-
-
-
-
-    <script src="default.js"></script>
-  </body>
-  </html>
+        <div id="show-more"> </div><br>
+        <script src="default.js"></script> <!--add files-->
+            </body>
+            </html>
