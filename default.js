@@ -1,15 +1,15 @@
 var tweets = [
   {'name': "Keepo", 'content': 'purr meow purr mew'},
-  {'name': 'Luna', 'content': 'mew mew humans meow'},
+  {'name': 'Lola', 'content': 'mew mew humans meow'},
   {'name': 'Nova', 'content': 'mew meow MEOW purr'},
   {'name': 'Whiskers', 'content': 'purrrrrrr #blessed'},
   {'name': 'Nova','content': 'mow mow mow mroww'},
-  {'name': 'Luna','content': 'mew mew mew purrrr'},
+  {'name': 'Lola','content': 'mew mew mew purrrr'},
   {'name': 'Waffles','content': 'mew meow mew meow #beyonce'},
-  {'name': 'Fluffy', 'content': 'mewww meww mew'},
+  {'name': 'Waffles', 'content': 'mewww meww mew'},
   {'name': 'Luna','content': '#blessed'},
   {'name': 'Keepo','content': 'meowmewmewoewmow'},
-  {'name': 'Luna', 'content': 'mew'}
+  {'name': 'Lola', 'content': 'mew'}
 ]
 
 var profiles = [
@@ -18,7 +18,7 @@ var profiles = [
     image: 'https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg'
   },
   {
-    name: 'Luna',
+    name: 'Lola',
     image: 'http://tinyurl.com/hkod3bj'
   },
   {
@@ -32,6 +32,10 @@ var profiles = [
   {
     name: 'Keepo',
     image: 'http://tinyurl.com/z76ugwu'
+  },
+  {
+    name: 'Nana',
+    image: 'https://s16.postimg.org/h4tpafu05/IMG_0070.jpg'
   }
 ]
 
@@ -108,6 +112,11 @@ function tweetElement(tweet) {
     var profile = getUserProfile(username, profiles);
     showProfile(profile);
     showTweets(tweetsForUser);
+    var newProfile = document.getElementById('notifications');
+    newProfile.classList.add('hide');
+    var hideButton = document.getElementById('post-button');
+    hideButton.classList.add('hide');
+
   })
 
   return element;
@@ -115,7 +124,6 @@ function tweetElement(tweet) {
 
 showProfile(profiles[0]);
 showTweets(tweets);
-
 
 
 

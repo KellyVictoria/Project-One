@@ -1,18 +1,31 @@
 .toptext {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Rasa', serif;
+
 }
 
 #container-profile {
-  margin: 45px;
+  margin: 35px;
   padding: 62px;
+  margin-left: 65px;
   max-width: 90%;
   background-color: #CCCDD0;
   text-align: left;
   border-radius: 40px;
+  font-family: 'Rasa', serif;
   box-shadow: -19px 15px 75px #32353E;
 }
+
 .container {
   background-color: #CCCDD0;
+  border-radius: 27px;
+  max-width: 90%;
+}
+
+#submit-post {
+  background-color: white;
+  color: black;
+  border: black 1px solid;
+  margin-left: 60px;
 }
 
 #notifications {
@@ -21,39 +34,44 @@
   background-color: white;
   border: #32353E solid 2px;
   width: 400px;
-  padding-left: 19px;
+  margin-left: 29px;
+  text-indent: 14px;
 }
 
 #post-button {
   background-color: white;
   color: black;
   border: black 1px solid;
+  margin-left: 60px;
 }
 
 .post-tweet {
-  margin: 35px;
+  margin: 80px;
   border: #32353E solid 2px;
   padding: 12px;
   border-radius: 28px;
   max-width: 70%;
   background-color: #CCCDD0;
-  text-align: left;
   box-shadow: -19px 15px 75px #32353E;
 }
 
 #main-view {
-  margin: 10px;
-  width: 97%;
+  margin: 40px;
+  width: 90%;
   font-size: 19px;
   border: 14px lightgrey solid;
   border-radius: 10px;
   box-shadow: -10px 10px 90px #32353E;
-  display: block;
 }
 
 .tweet-username {
   font-weight: bold;
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.tweet-text {
+  margin-left: 32px;
 }
 
 .profile-image {
@@ -85,4 +103,9 @@ p{
   font-family: 'Amatic SC', sans-serif;
   src: url('AmaticSC.webfont.woff2');
   font-weight: 300;
+}
+@font-face {
+  font-family: 'Rasa', serif;
+  src: ("https://fonts.googleapis.com/css?family=Rasa:400,600");
+  font-weight: 400,600;
 }
