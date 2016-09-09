@@ -12,10 +12,28 @@ var tweets = [
   {'name': 'Luna', 'content': 'mew'}
 ]
 
-var profile = {
-  name: 'Nova',
-  image: 'https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg'
-}
+var profiles = [
+  {
+    name: 'Nova',
+    image: 'https://s16.postimg.org/s5a3dst1x/Kelly_Kenney.jpg'
+  },
+  {
+    name: 'Luna',
+    image: 'http://tinyurl.com/hkod3bj'
+  },
+  {
+    name: 'Whiskers',
+    image: 'https://s16.postimg.org/o1m83gg6t/027_A2555.jpg'
+  },
+  {
+    name: 'Waffles',
+    image: 'http://tinyurl.com/hoflgwm'
+  },
+  {
+    name: 'Keepo',
+    image: 'http://tinyurl.com/z76ugwu'
+  }
+]
 
 
 var submitPost = document.getElementById('submit-post');
@@ -54,6 +72,15 @@ function getUserTweets(username, tweets) {
   return userTweets;
 }
 
+function getUserProfile(username, profiles) {
+  for (var i = 0; i < profiles.length; i++) {
+    var profile = profiles[i];
+    if (username === profile.name) {
+      return profile
+    }
+  }
+}
+
 function tweetElement(tweet) {
   // <div class="tweet">
   //   <p class="tweet-username">
@@ -77,15 +104,20 @@ function tweetElement(tweet) {
 
   userParagraph.addEventListener('click', function (event){
     var username = event.target.getAttribute('data-username');
-    var tweetsForUser = getUserTweets(username, tweets)
+    var tweetsForUser = getUserTweets(username, tweets);
+    var profile = getUserProfile(username, profiles);
+    showProfile(profile);
     showTweets(tweetsForUser);
   })
 
   return element;
 }
 
-showProfile(profile);
+showProfile(profiles[0]);
 showTweets(tweets);
+
+
+
 
 
 function profileElement(profile) {

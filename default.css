@@ -1,10 +1,7 @@
 .toptext {
   font-family: 'Poiret One', cursive;
 }
-#topborder {
-  padding-left: 20px;
-  font-family: 'Poiret One', cursive;
-}
+
 #container-profile {
   margin: 45px;
   padding: 62px;
@@ -14,28 +11,6 @@
   border-radius: 40px;
   box-shadow: -19px 15px 75px #32353E;
 }
-
-.img-thumbnail {
-  max-width: 176px;
-  max-height: 260px;
-  margin-left: 2px;
-  position: relative;
-}
-
-#openerlines {
-  line-height: 6em;
-}
-
-#welcome {
-  display: inline-block;
-  color: black;
-  line-height: 2em;
-  padding-left: 19px;
-  background-color: white;
-  border: #32353E solid 2px;
-  width: 95%;
-}
-
 .container {
   background-color: #CCCDD0;
 }
@@ -76,11 +51,6 @@
   display: block;
 }
 
-.user{
-  color: purple;
-  text-indent: 11px;
-}
-
 .tweet-username {
   font-weight: bold;
   cursor: pointer;
@@ -97,16 +67,9 @@
 
 
 p{
-  background-color: lightgrey;
+  background-color: light grey;
   margin: 10px;
 }
-
-
-.content {
-  text-indent: 10px;
-  font-size: 27px;
-}
-
 
 #headline-post{
   padding-left: 20px;
